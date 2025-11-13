@@ -15,7 +15,7 @@ const Hero = () => {
               </div>
             </div>
             <a
-              href="https://drive.google.com/uc?export=download&id=1Xz5tI570jVYuxyh1jl2AMkRd5zJ_OX9l"
+              href="/Simple Professional CV Resume_20251113_220622_0000.pdf"
               rel="noopener noreferrer"
               target="_blank"
               className="btn btn-primary"
