@@ -4,6 +4,14 @@ import { ImGift } from "react-icons/im";
 export default function Projects() {
   const projects = [
     {
+      title: "Trafalgar Webpage",
+      tech: ["HTML", "Tailwind CSS", "JavaScript"],
+      github_link: "https://github.com/nafisa727/doctor",
+      image: "https://nafisa727.github.io/doctor/",
+      link: "https://nafisa727.github.io/doctor/",
+      description: "A platform for Health Services",
+    },
+    {
       title: "Aphrodite Webpage",
       tech: ["HTML", "Tailwind CSS", "JavaScript"],
       github_link: "https://github.com/nafisa727/portfolio",
@@ -11,13 +19,14 @@ export default function Projects() {
       link: "https://nafisa727.github.io/Portfolio/",
       description: "A platform for Beauty products",
     },
+    
     {
-      title: "Trafalgar Webpage",
+      title: "Portfolio Webpage",
       tech: ["HTML", "Tailwind CSS", "JavaScript"],
-      github_link: "https://github.com/nafisa727/doctr",
-      image: "https://nafisa727.github.io/doctr/",
-      link: "https://nafisa727.github.io/doctr/",
-      description: "A platform for Health Services",
+      github_link: "https://github.com/nafisa727/my-repo",
+      image: "https://nafisa727.github.io/my-repo/",
+      link: "https://nafisa727.github.io/my-repo/",
+      description: "A platform I designed for the purpose of making a website for a developer",
     },
   ];
 
@@ -30,14 +39,14 @@ export default function Projects() {
         <div
           className={
             projects.length == 1
-              ? `flex justify-center items-center gap-8 w-full`
-              : `grid grid-cols-1 md:grid-cols-2 gap-8`
+              ? `flex justify-center items-center gap-8 w-full justify-items-center`
+              : `grid grid-cols-1 md:grid-cols-3 w-full gap-8`
           }
         >
           {projects.map((project, i) => (
             <div
               key={i}
-              className="card card-border border-4 shadow-white/20 shadow-xl hover:scale-105 transition max-w-lg"
+              className="card card-border border-4 shadow-white/20 shadow-xl hover:scale-105 transition w-full mx-auto"
             >
               {project.image ? (
                 <iframe

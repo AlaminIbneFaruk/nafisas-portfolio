@@ -7,9 +7,9 @@ const Hero = () => {
       <div id="home" className="hero min-h-screen font-display">
         <div className="hero-content flex-col items-center justify-center text-center w-full">
           <div className="p-8">
-            <h1 className="text-5xl font-bold cursor-pointer">HELLO</h1>
+            <h1 className="text-7xl font-bold cursor-pointer">HELLO</h1>
             <div>
-              <h2 className="text-5xl mt-4 mb-6 ">I'm Mst. Nafisa Akter,</h2>
+              <h2 className="text-7xl mt-4 mb-6 ">I'm Mst. Nafisa Akter,</h2>
               <div className="font-semibold text-4xl my-8 text-primary">
                 {"a Web Developer"}
               </div>

@@ -52,16 +52,17 @@ const Skills = () => {
 
   const All = [...Languages, ...Frontend];
   return (
-    <div className="p-8" id="skills">
-      <h1 className="text-5xl font-bold my-5 text-center">Skills</h1>
+    <div className="p-8 " id="skills" >
+      <h1 className="text-5xl font-bold my-5 text-center text-primary">Skills</h1>
       <Tabs>
-        <TabList>
+        <TabList className={"text-primary text-2xl font-semibold outline-0"}>
           <Tab>All</Tab>
           <Tab>Languages</Tab>
           <Tab>Frontend</Tab>
         </TabList>
+        <hr />
         <TabPanel>
-          <div>
+          <div className="my-12">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-4 mb-16">
               {All.map((other, index) => (
                 <div
@@ -78,7 +79,7 @@ const Skills = () => {
           </div>
         </TabPanel>
         <TabPanel>
-          <div>
+          <div className="my-12">
             <ul className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 mb-16">
               {Languages.map((language, index) => (
                 <li
@@ -93,7 +94,7 @@ const Skills = () => {
           </div>
         </TabPanel>
         <TabPanel>
-          <div>
+          <div className="my-12">
             <ul className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 mb-16">
               {Frontend.map((frontend, index) => (
                 <li
@@ -108,6 +109,7 @@ const Skills = () => {
           </div>
         </TabPanel>
       </Tabs>
+      <hr />
     </div>
   );
 };

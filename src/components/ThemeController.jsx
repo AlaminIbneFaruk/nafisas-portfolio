@@ -2,7 +2,7 @@ const ThemeSelector = () => {
   return (
     <div>
       <label className="toggle text-base-content">
-        <input type="checkbox" value="cyberpunk" className="theme-controller" />
+        <input type="checkbox" value="light" className="theme-controller" />
 
         <svg
           aria-label="sun"
